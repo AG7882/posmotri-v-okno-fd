@@ -76,6 +76,7 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  position: relative;
 }
 
 .content__details {
@@ -88,6 +89,7 @@ ol {
   height: 386px;
   margin-bottom: 16px;
   object-fit: cover;
+  position: relative;
 }
 
 .result__video {
@@ -332,12 +334,6 @@ ol {
   padding: 0 3px;
 }
 
-.result__video-container {
-  position: relative;
-}
-.content__list-container {
-  position: relative;
-}
 .visually-hidden {
   position: absolute;
   inline-size: 1px;

@@ -191,7 +191,7 @@ ol {
 }
 
 .search-form__textfield {
-  font-size: inherit;
+  font-size: 17px; /*inherit не делаю. шрифт уменьшил, потому что с размером 18px, как в макете, надпись помещается не полностью*/
   background-color: transparent;
   color: #fff;
   opacity: 0.7;
@@ -204,7 +204,6 @@ ol {
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   padding: 0;
-  font-size: 17px;  /*шрифт уменьшил, потому что с размером 18px, как в макете, надпись помещается не полностью*/
 }
 
 .search-form__textfield:focus {

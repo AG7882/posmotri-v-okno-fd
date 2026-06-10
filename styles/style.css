@@ -121,6 +121,7 @@ ol {
 }
 
 .search-form__fieldset-title {
+  margin-block-end: 5px;
   font-family: inherit;
   font-weight: 400;
   font-size: 18px;
@@ -138,7 +139,7 @@ ol {
 }
 
 .content__accent {
-  opacity: 0.2;
+  color: #545050;
 }
 
 .content__card-link {
@@ -148,9 +149,10 @@ ol {
 }
 
 .content__video-card-title {
+  line-height: 1;
+  margin-block-end: 6px;
   font-family: Oswald, sans-serif;
   font-weight: 700;
-  font-style: bold;
   overflow: hidden;
   white-space: nowrap;
   text-transform: uppercase;
@@ -160,6 +162,7 @@ ol {
 }
 
 .content__video-card-description {
+  line-height: 0.9;
   overflow: hidden;
   width: 196px;
   line-clamp: 4;
@@ -174,7 +177,7 @@ ol {
 .search-form__checkbox-list {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 15px;
 }
 
 .search-form__fieldset {
@@ -186,16 +189,16 @@ ol {
   align-items: center;
   justify-content: flex-start;
   width: fit-content;
-  gap: 10px;
+  gap: 5px;
   cursor: pointer;
 }
 
 .search-form__textfield {
-  font-size: 17px; /*inherit не делаю. шрифт уменьшил, потому что с размером 18px, как в макете, надпись помещается не полностью*/
+  font-size: 18px;
   background-color: transparent;
   color: #fff;
   opacity: 0.7;
-  width: 211px;
+  width: 225px;
   height: 27px;
   font-family: inherit;
   font-weight: 400;
@@ -247,11 +250,8 @@ ol {
   outline: none;
 }
 
-.search-form__label:has(:focus) {
-  border-bottom: 1px solid white;
-}
-
 .button {
+  padding: 0;
   font-size: inherit;
   font-weight: 700;
   border: 1px solid white;
@@ -270,15 +270,15 @@ ol {
 }
 
 .more-button {
-  width: 194px;
-  height: 34px;
+  min-width: 194px;
+  min-height: 34px;
 }
 
 .search-form__submit-button:hover {
   text-decoration: underline;
 }
 
-.search-form__label-text:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
 }
 
